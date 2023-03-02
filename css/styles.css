@@ -8,6 +8,8 @@
 	--btn-color: #e7e9fc;
 }
 body {
+	width: 1440px;
+	margin: 0 auto;
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -27,13 +29,11 @@ p {
 
 img {
 	display: block;
-	margin: 0;
-	padding: 0;
+	max-width: 100%;
+	height: auto;
 }
 
 .wrap {
-	width: 1440px;
-	margin: 0 auto;
 }
 
 .sect-title {
@@ -82,8 +82,9 @@ footer {
 }
 
 .container {
-	display: flex;
-	align-items: center;
+	width: 1158px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 /* Menu */
@@ -93,13 +94,13 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	border-bottom: 1px solid var(--btn-color);
+	padding: 24px 0;
 }
 
 .main-navigation {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 24px 0;
 }
 
 .contacts {
@@ -147,13 +148,13 @@ footer {
 /* Hero section */
 .hero {
 	background-color: var(--main-color);
+	padding: 188px 0;
 }
 .hero-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 188px 0;
 }
 
 .hero-title {
@@ -232,10 +233,6 @@ footer {
 	align-items: center;
 }
 .worker-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	background-color: #fff;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
@@ -245,16 +242,18 @@ footer {
 }
 
 .worker-description {
-	margin: 32px 16px;
+	padding: 32px 0;
 	text-align: center;
 }
 .worker-name {
-	margon-bottom: 8px;
+	margin-bottom: 8px;
 }
 
 /* Footer */
-.footer-container {
+.footer {
 	padding: 100px 0;
+}
+.footer-container {
 	margin-left: 156px;
 	width: 264px;
 }
@@ -303,7 +302,7 @@ footer {
 .btn:active {
 	background-color: var(--active-color);
 	color: var(--white-primary);
-	border-color: transparent;
+	border-color: var(--active-color);
 }
 
 /* Work list */
@@ -313,19 +312,19 @@ footer {
 	row-gap: 48px;
 	column-gap: 24px;
 	justify-content: center;
-	margin-bottom: 120px;
 }
 .work-filter {
 	color: var(--sceondary-color);
 }
 
 .work-name {
-	margin: 32px 16px;
+	padding: 32px 16px;
+	border: 1px solid var(--btn-color);
+	border-top: none;
 }
 .work-card {
-	display: inline-block;
+	display: block;
 	background: var(--white-primary);
-	border: 1px solid var(--btn-color);
 }
 
 .work-title {
