@@ -43,6 +43,7 @@ img {
 	line-height: 1.1;
 	color: var(--main-color);
 	text-align: center;
+	text-transform: capitalize;
 }
 
 .item-title {
@@ -151,11 +152,10 @@ header {
 	background-color: var(--main-color);
 	padding: 188px 0;
 }
-.hero-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+
+.hero-title {
+	text-align: center;
+	margin: 0 auto;
 }
 
 .hero-title {
@@ -169,6 +169,8 @@ header {
 }
 /* Main Button */
 .main-btn {
+	display: block;
+	margin: 0 auto;
 	padding: 16px 32px;
 	border-radius: 4px;
 	border-width: 0;
@@ -253,11 +255,9 @@ header {
 /* Footer */
 .footer {
 	padding: 100px 0;
+	min-width: 264px;
 }
-.footer-container {
-	margin-left: 156px;
-	width: 264px;
-}
+
 .logo-footer {
 	display: inline-block;
 	margin-bottom: 16px;
@@ -272,13 +272,17 @@ header {
 }
 .footer-text {
 	color: var(--btn-color);
+	width: 264px;
 }
 
 /* Portfolio */
 /* Filters */
+.work-examples {
+	padding: 96px 0 120px 0;
+}
 .filters {
 	display: flex;
-	margin: 96px 0 72px 0;
+	margin-bottom: 72px;
 	justify-content: center;
 }
 .filter-item {
