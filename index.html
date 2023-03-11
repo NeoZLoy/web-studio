@@ -40,7 +40,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
-					<button class="main-btn" type="button">Order Service</button>
+					<button class="main-btn" type="button" data-modal-open>Order Service</button>
 				</div>
 			</section>
 			<section class="features">
@@ -312,9 +312,9 @@
 						Increase the flow of customers and sales for your business with digital marketing & growth solutions.
 					</p>
 				</div>
-				<div class="social-links">
-					<h3 class="socials">Social media</h3>
-					<ul class="footer-socials list">
+				<div class="socials">
+					<h3 class="socials-title">Social media</h3>
+					<ul class="footer-socials-list list">
 						<li class="footer-social-item"
 							><a href="" class="footer-social-link">
 								<svg class="footer-social-icon" width="24" height="24">
@@ -343,5 +343,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="close-modal" type="button" data-modal-close>
+					<svg class="close-icon" width="8px" height="8px">
+						<use href="./images/svg-sprite.svg#icon-close-modal"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
