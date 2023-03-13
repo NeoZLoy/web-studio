@@ -313,7 +313,7 @@
 					</p>
 				</div>
 				<div class="socials">
-					<h3 class="socials-title">Social media</h3>
+					<h3 class="footer-title">Social media</h3>
 					<ul class="footer-socials-list list">
 						<li class="footer-social-item"
 							><a href="" class="footer-social-link">
@@ -341,6 +341,21 @@
 						></li>
 					</ul>
 				</div>
+				<div class="subscribe-block">
+					<div class="subscribe-panel">
+						<h3 class="footer-title">Subscribe</h3>
+						<label>
+							<input type="email" name="subscribe-mail" placeholder="E-mail" class="subscribe-input" />
+						</label>
+					</div>
+
+					<button type="button" class="subscribe-btn"
+						>Subscribe
+						<svg width="24px" height="24px" class="tg-icon">
+							<use href="./images/icons.svg#icon-tg-subscribe"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -350,18 +365,42 @@
 						<use href="./images/svg-sprite.svg#icon-close-modal"></use>
 					</svg>
 				</button>
-				<div role="group" class="form">
-					<p class="callback"> Leave your contacts and we will call you back </p>
-					<label for="name" class="label">Name</label>
-					<input type="text" name="name" id="name" class="input" autofocus />
-					<label for="phone" class="label">Phone</label>
-					<input type="tel" name="phone" id="phone" class="input" />
-					<label for="mail" class="label">E-mail</label>
-					<input type="email" name="mail" id="mail" class="input" />
-					<label for="comment" class="label">Comment</label>
-					<textarea name="mail" id="mail" placeholder="Text input" class="textarea" rows="5"> </textarea>
-					<input type="checkbox" name="privacy" />
-					<p class="privacy-text"> I accept the terms and conditions of the Privacy Policy </p>
+				<div role="group" aria-labelledby="callback-title" class="callback-form">
+					<p class="callback-title" id="callback-title"> Leave your contacts and we will call you back </p>
+
+					<label class="form-field">
+						<input type="text" name="name" class="input" />
+						<svg class="input-icon" width="18px" height="24px">
+							<use href="./images/icons.svg#icon-name"></use>
+						</svg>
+						<span class="input-name">Name</span>
+					</label>
+					<label class="form-field">
+						<input type="text" name="tel" class="input" />
+						<svg class="input-icon" width="18px" height="24px">
+							<use href="./images/icons.svg#icon-tel"></use>
+						</svg>
+						<span class="input-name">Phone</span>
+					</label>
+					<label class="form-field">
+						<input type="text" name="tel" class="input" />
+						<svg class="input-icon" width="18px" height="24px">
+							<use href="./images/icons.svg#icon-mail"></use>
+						</svg>
+						<span class="input-name">Email</span>
+					</label>
+
+					<label class="form-field">
+						<span class="input-name">Comment</span>
+						<textarea name="comment" placeholder="Text input" class="input comment"> </textarea>
+					</label>
+
+					<label class="privacy">
+						<input type="checkbox" name="privacy" class="checkbox" />
+						<span class="checkbox-custom"> </span>
+						<p class="privacy-text"> I accept the terms and conditions of the <a href="#">Privacy Policy</a> </p>
+					</label>
+					<button type="submit" class="submit-btn">Send</button>
 				</div>
 			</div>
 		</div>
