@@ -446,6 +446,7 @@ header {
 	min-height: 40px;
 	min-width: 264px;
 	padding-left: 16px;
+	color: var(--white-primary);
 }
 
 .subscribe-btn {
@@ -472,6 +473,7 @@ header {
 }
 .tg-icon {
 	fill: #fff;
+	margin-left: 16px;
 }
 /* Portfolio */
 /* Filters */
