@@ -1,3 +1,3 @@
-# goit-markup-hw-05
-https://neozloy.github.io/goit-markup-hw-05/
-HW #5 By Michael
+# goit-markup-hw-06
+https://neozloy.github.io/goit-markup-hw-06/
+HW #6 By Michael
