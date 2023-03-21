@@ -654,7 +654,8 @@ header {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding-left: 38px;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	outline: none;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-field {
@@ -681,7 +682,6 @@ header {
 
 .form-field:focus-within > .input {
 	border-color: var(--accent-color);
-	outline-color: var(--accent-color);
 }
 
 .input-name {
@@ -732,7 +732,7 @@ header {
 	color: var(--accent-color);
 }
 
-.checkbox:hover {
+.checkbox:is(:hover, :focus) {
 	border-color: #000;
 }
 
@@ -749,7 +749,7 @@ header {
 .submit-btn {
 	display: block;
 	padding: 16px 32px;
-	margin: 24px auto;
+	margin: 24px auto 0;
 	min-width: 169px;
 	border-radius: 4px;
 	border-width: 0;
