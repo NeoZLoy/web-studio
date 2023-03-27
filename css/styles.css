@@ -17,6 +17,11 @@ body {
 	color: #434455;
 	background-color: var(--white-primary);
 }
+
+.modal-open {
+	overflow: hidden;
+}
+
 ul,
 h1,
 h2,
@@ -126,6 +131,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: var(--active-color);
 }
 .active::after {
 	content: " ";
@@ -144,10 +150,6 @@ header {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:is(:hover, :focus) {
-	color: var(--active-color);
-}
-
-.active {
 	color: var(--active-color);
 }
 
@@ -178,9 +180,6 @@ header {
 .hero-title {
 	text-align: center;
 	margin: 0 auto;
-}
-
-.hero-title {
 	width: 496px;
 	text-align: center;
 	font-size: 56px;
@@ -361,7 +360,7 @@ header {
 /* Footer */
 .footer {
 	display: flex;
-	padding: 100px 0;
+	padding: 100px;
 	min-width: 264px;
 }
 .footer-container {
@@ -582,6 +581,7 @@ header {
 }
 
 /* Modal&Backdrop */
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -635,7 +635,7 @@ header {
 	fill: currentColor;
 }
 
-/* Inputs */
+/* Modal inputs */
 
 .callback-title {
 	text-align: center;

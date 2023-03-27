@@ -15,25 +15,36 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/styles-1.css" />
 	</head>
 	<body>
 		<header>
-			<div class="container header-container">
+			<div class="header-container">
 				<nav class="main-navigation">
 					<a href="./index.html" class="logo link"><span class="accent-logo">Web</span>Studio</a>
 					<ul class="menu list">
 						<li class="menu-item"><a href="./index.html" class="menu-link link">Studio</a></li>
 						<li class="menu-item"><a href="./portfolio.html" class="menu-link link active">Portfolio</a></li>
-						<li class="menu-item"><a href="" class="menu-link link">Contacts</a></li>
+						<li class="menu-item"><a href="#footer" class="menu-link link">Contacts</a></li>
 					</ul>
+					<button
+						class="menu-button js-open-menu"
+						type="button"
+						aria-label="Mobile menu toggle"
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+					>
+						<svg width="30px" height="30px">
+							<use href="./images/icons.svg#icon-menu-button" width="30px" height="30px"></use>
+						</svg>
+					</button>
+					<address class="contacts-container">
+						<ul class="contacts list">
+							<li><a href="mailto:info@devstudio.com" class="contact-item link">info@devstudio.com</a></li>
+							<li> <a href="tel:+110001111111" class="contact-item link">+11 (000) 111-11-11</a></li>
+						</ul>
+					</address>
 				</nav>
-				<address>
-					<ul class="contacts list">
-						<li><a href="mailto:info@devstudio.com" class="contact-item link">info@devstudio.com</a></li>
-						<li> <a href="tel:+110001111111" class="contact-item link">+11 (000) 111-11-11</a></li>
-					</ul>
-				</address>
 			</div>
 		</header>
 		<main>
@@ -218,7 +229,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container footer-container">
 				<div class="footer-logo">
 					<a href="./index.html" class="logo-footer link"><span class="accent-logo">Web</span>Studio</a>
@@ -255,22 +266,79 @@
 						></li>
 					</ul>
 				</div>
+
 				<form name="subscribe-form" autocomplete="on" class="subscribe-block">
-					<div class="subscribe-panel">
-						<h3 class="footer-title">Subscribe</h3>
-						<label>
+					<h3 class="footer-title">Subscribe</h3>
+					<div class="input-block"
+						><label>
 							<input type="email" name="subscribe-mail" placeholder="E-mail" class="subscribe-input" />
 						</label>
-					</div>
-
-					<button type="submit" class="subscribe-btn"
-						>Subscribe
-						<svg width="24px" height="24px" class="tg-icon">
-							<use href="./images/icons.svg#icon-tg-subscribe"></use>
-						</svg>
-					</button>
-				</form>
-			</div>
+						<button type="button" class="subscribe-btn"
+							>Subscribe
+							<svg width="24px" height="24px" class="tg-icon">
+								<use href="./images/icons.svg#icon-tg-subscribe"></use>
+							</svg>
+						</button>
+					</div> </form
+			></div>
 		</footer>
+		<div class="mobile-menu-container js-menu-container" id="menu-container">
+			<button class="close-menu js-close-menu" type="button">
+				<svg class="close-icon" width="8px" height="8px">
+					<use href="./images/svg-sprite.svg#icon-close-modal"></use>
+				</svg>
+			</button>
+			<div class="mobile-menu">
+				<div class="top"
+					><ul class="list">
+						<li class="menu-item"><a href="./index.html" class="menu-link link">Studio</a></li>
+						<li class="menu-item"><a href="./portfolio.html" class="menu-link link active">Portfolio</a></li>
+						<li class="menu-item"><a href="" class="menu-link link">Contacts</a></li>
+					</ul></div
+				>
+				<div class="bottom">
+					<ul class="mobile-contacts list">
+						<li class="contact-item"> <a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+						<li class="contact-item"><a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a></li>
+					</ul>
+				</div>
+
+				<ul class="menu-socials list">
+					<li class="menu-social-item">
+						<a href="" class="menu-social-link link">
+							<svg class="menu-social-icon" width="16" height="16">
+								<use href="./images/svg-sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="menu-social-item">
+						<a href="" class="menu-social-link link">
+							<svg class="menu-social-icon" width="16" height="16">
+								<use href="./images/svg-sprite.svg#icon-twitter"></use>
+							</svg> </a
+					></li>
+					<li class="menu-social-item">
+						<a href="" class="menu-social-link link">
+							<svg class="menu-social-icon" width="16" height="16">
+								<use href="./images/svg-sprite.svg#icon-facebook"></use>
+							</svg> </a
+					></li>
+					<li class="menu-social-item"
+						><a href="" class="menu-social-link link">
+							<svg class="menu-social-icon" width="16" height="16">
+								<use href="./images/svg-sprite.svg#icon-linkedin"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

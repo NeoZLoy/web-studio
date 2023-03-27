@@ -12,5 +12,8 @@
 <symbol id="icon-tg-subscribe" viewBox="0 0 38 32">
 <path d="M38.4 0l-38.4 18 12.272 3.787 18.928-14.787-14.397 16.186 0.011 0.005-0.014-0.005v8.814l6.882-6.691 8.72 2.691 5.998-28z"></path>
 </symbol>
+<symbol id="icon-menu-button" viewBox="0 0 30 30">
+<path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
+</symbol>
 </defs>
 </svg>
