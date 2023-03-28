@@ -58,7 +58,10 @@ footer {
 }
 
 section:not(:first-child) {
-	padding: 96px 0;
+	padding-top: 96px;
+}
+section:last-child {
+	padding-bottom: 120px;
 }
 .list {
 	list-style: none;
