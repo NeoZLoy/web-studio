@@ -658,6 +658,12 @@ section:not(:first-child) {
 	letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 1200px) {
+	.feature-title {
+		font-size: 24px;
+		font-weight: 500;
+	}
+}
 @media screen and (max-width: 767px) {
 	.feature-title {
 		text-align: center;
@@ -1079,11 +1085,18 @@ section:not(:first-child) {
 }
 
 /* Work list */
-
+.work-list {
+	margin-right: auto;
+	margin-left: auto;
+}
 .work-list > li {
 	width: 396px;
-	margin-left: auto;
-	margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.work-list > li {
+		width: 356px;
+	}
 }
 
 .work-filter {
