@@ -1,3 +1,7 @@
-# goit-markup-hw-07
-https://neozloy.github.io/goit-markup-hw-07/
-HW #7 By Michael
+# Web studio
+Simple web site for web studio with responsive design.
+
+Technologies:
+- HTML
+- CSS
+- JS
